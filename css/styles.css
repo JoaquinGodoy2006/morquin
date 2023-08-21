@@ -1,0 +1,305 @@
+
+.menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .menu-icon::before {
+    transform: translateY(-10px);
+  }
+  
+  .menu-icon::after {
+    transform: translateY(10px);
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+    margin-left: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .auth-buttons .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .auth-buttons .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .menu-toggle:checked + .navbar .nav-links {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .menu-toggle:checked + .navbar .nav-links a {
+    padding: 15px;
+  }
+  
+  .footer {
+    background-color: #f0f0f0;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .social-buttons {
+    margin-top: 10px;
+  }
+  
+  .social-button img {
+    width: 25px; 
+    height: 25px; 
+    padding: 10px;
+  }
+  
+  .contact-button {
+    margin-top: 25px;
+  }
+/* Tu CSS existente */
+
+/* Estilos para la sección de portada (hero) */
+.hero {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  text-align: center;
+  color: black;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-content {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+}
+
+.logo-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.menu-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.menu-item h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.menu-item .price {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.ver-mas-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+}
+
+.ver-mas-button a {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #cccccc;
+  color: #555555;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ver-mas-button a:hover {
+  background-color: #999999;
+}
+
+
+.menu-section {
+  padding: 40px 0;
+}
+
+.menu-section h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.menu-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.menu-item .price {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.contact-form {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button.send-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button.send-button:hover {
+  background-color: #c0392b;
+}
