@@ -10,28 +10,52 @@
 <header>
   <nav class="navbar">
     <div class="logo">
-      <img src="../IMG/Morquin.jpg" alt="Logo del Restaurante">
+      <img src="../img/Morquin.jpg" alt="Logo del Restaurante">
     </div>
     <div class="auth-buttons">
-      <a href="Registro.html" class="btn" target="_blank">Registrarse</a>
-      <a href="Iniciar%20sesion.html" class="btn" target="_blank">Iniciar Sesión</a>
+      <a href="registro.html" class="btn" target="_blank">Registrarse</a>
+      <a href="iniciar_sesion.html" class="btn" target="_blank">Iniciar Sesión</a>
     </div>
   </nav>
 </header>
+
+<section class="contact-form">
+  <h2>Contactate con Morquin</h2>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" required>
+
+    <label for="asunto">Asunto:</label>
+    <input type="text" id="asunto" name="asunto" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button class="send-button" type="button">Enviar</button>
+  </form>
+</section>
+
 <footer class="footer">
   <div class="social-buttons">
     <a href="https://www.facebook.com/" class="social-button" target="_blank">
-      <img src="../IMG/Facebook.png" alt="Facebook">
+      <img src="../img/Facebook.png" alt="Facebook">
     </a>
     <a href="https://www.instagram.com/" class="social-button" target="_blank">
-      <img src="../IMG/Instagram.png" alt="Instagram">
+      <img src="../img/Instagram.png" alt="Instagram">
     </a>
     <a href="https://ar.pinterest.com/" class="social-button" target="_blank">
-      <img src="../IMG/Pinterets.png" alt="Pinterest">
+      <img src="../img/Pinterets.png" alt="Pinterest">
     </a>
   </div>
-  <a href="Contactate.html" class="btn contact-button">Contáctanos</a>
-  <p>Todos los derechos reservados</p>
 </footer>
 
 </body>
