@@ -7,3 +7,6 @@ Este es un sitio web para el restaurante "Morquin". En el podras Registrarte y l
 
 # Instalación
 Para correr el proyecto primero descargar de github con "git clone https://github.com/JoaquinGodoy2006/morquin.git" y luego abrir el index.html.
+
+# Vercel 
+https://morquin.vercel.app/
